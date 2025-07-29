@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Gift, MapPin, DollarSign, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TicketingSection = () => {
   const ticketTypes = [
@@ -122,15 +123,17 @@ const TicketingSection = () => {
                   ))}
                 </div>
 
-                <Button 
-                  variant={ticket.highlight ? "festival" : "neon"} 
-                  className="w-full"
-                  size="lg"
-                >
-                  {ticket.type === "Free Entry" ? "Claim Free Ticket" : 
-                   ticket.type === "Local Café" ? "Find Café Locations" : 
-                   "Buy at Door"}
-                </Button>
+                <Link to="/tickets">
+                  <Button 
+                    variant={ticket.highlight ? "festival" : "neon"} 
+                    className="w-full"
+                    size="lg"
+                  >
+                    {ticket.type === "Free Entry" ? "Claim Free Ticket" : 
+                     ticket.type === "Local Café" ? "Find Café Locations" : 
+                     "Buy at Door"}
+                  </Button>
+                </Link>
               </Card>
             );
           })}

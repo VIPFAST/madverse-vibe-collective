@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -49,21 +50,25 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="festival" 
-              size="xl" 
-              className="min-w-[200px] float-animation"
-            >
-              Get Free Ticket
-            </Button>
-            <Button 
-              variant="neon" 
-              size="xl" 
-              className="min-w-[200px] float-animation"
-              style={{ animationDelay: '0.5s' }}
-            >
-              Buy Tickets
-            </Button>
+            <Link to="/tickets">
+              <Button 
+                variant="festival" 
+                size="xl" 
+                className="min-w-[200px] float-animation"
+              >
+                Get Free Ticket
+              </Button>
+            </Link>
+            <Link to="/tickets">
+              <Button 
+                variant="neon" 
+                size="xl" 
+                className="min-w-[200px] float-animation"
+                style={{ animationDelay: '0.5s' }}
+              >
+                Buy Tickets
+              </Button>
+            </Link>
           </div>
 
           {/* Floating Elements */}
