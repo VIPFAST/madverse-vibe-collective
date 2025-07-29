@@ -72,11 +72,8 @@ const HeroSection = () => {
           </div>
 
           {/* Floating Elements */}
-          <div className="mt-16 text-xs text-muted-foreground/60 animate-bounce">
-            <div className="w-px h-8 bg-gradient-to-b from-primary to-transparent mx-auto mb-2" />
-            Scroll to explore
+          
           </div>
-        </div>
       </div>
 
       {/* Scroll Indicator */}
