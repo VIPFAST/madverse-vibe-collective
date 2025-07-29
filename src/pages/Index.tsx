@@ -65,7 +65,7 @@ const Index = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground mb-6">
-            <span>© 2024 MADVERSE Festival</span>
+            <span>© 2026 MADVERSE Festival</span>
             <span>•</span>
             <span>Peja, Kosovo</span>
             <span>•</span>
