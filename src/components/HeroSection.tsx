@@ -54,7 +54,7 @@ const HeroSection = () => {
               <Button 
                 variant="festival" 
                 size="xl" 
-                className="min-w-[200px] float-animation"
+                className="min-w-[200px] "
               >
                 Get Free Ticket
               </Button>
@@ -63,7 +63,7 @@ const HeroSection = () => {
               <Button 
                 variant="neon" 
                 size="xl" 
-                className="min-w-[200px] float-animation"
+                className="min-w-[200px] "
                 style={{ animationDelay: '0.5s' }}
               >
                 Buy Tickets

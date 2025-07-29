@@ -68,11 +68,15 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button variant="festival" size="sm">
+            <div className="hidden md:block">
+            <Button
+              variant="neon"
+              size="sm"
+              onClick={() => scrollToSection('#tickets')}
+            >
               Get Tickets
             </Button>
-          </div>
+            </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
