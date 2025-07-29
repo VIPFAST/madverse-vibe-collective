@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
 
+
 const GetTickets = () => {
   const [freeTicketsLeft, setFreeTicketsLeft] = useState(73);
   const [claimingFree, setClaimingFree] = useState(false);
@@ -20,7 +21,7 @@ const GetTickets = () => {
       setFreeTicketsLeft(prev => prev - 1);
       setClaimingFree(false);
       toast({
-        title: "Free Ticket Claimed! 🎉",
+        title: "Free Ticket Claimed!",
         description: "Check your email for confirmation and QR code.",
       });
     }, 2000);
@@ -122,7 +123,7 @@ const GetTickets = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h2 className="text-3xl font-black mb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  MADVERSE 2024
+                  MADVERSE 2026
                 </h2>
                 <p className="text-muted-foreground mb-4">
                   A celebration of youth, chaos, and creativity
@@ -130,7 +131,7 @@ const GetTickets = () => {
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-primary" />
-                    <span>December 15, 2024</span>
+                    <span>TBD 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-primary" />
@@ -173,7 +174,7 @@ const GetTickets = () => {
             >
               {ticket.urgent && (
                 <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-primary to-secondary text-primary-foreground text-center py-1 text-sm font-bold">
-                  ⚡ LIMITED TIME - Only {ticket.available} left!
+                   LIMITED TIME - Only {ticket.available} left!
                 </div>
               )}
               
