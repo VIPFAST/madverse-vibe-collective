@@ -6,53 +6,53 @@
 
 @layer base {
   :root {
-    /* Festival Color Palette - Electric & Vibrant */
-    --background: 225 15% 8%;
-    --foreground: 0 0% 98%;
+    /* MADVERSE Color Palette - Dark & Teal Theme */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 95%;
 
-    --card: 225 15% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 225 15% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Electric Purple Primary */
-    --primary: 285 100% 65%;
-    --primary-foreground: 225 15% 8%;
+    /* Bright Teal Primary */
+    --primary: 162 85% 47%;
+    --primary-foreground: 0 0% 0%;
 
-    /* Neon Cyan Secondary */
-    --secondary: 195 100% 55%;
-    --secondary-foreground: 225 15% 8%;
+    /* Darker Teal Secondary */
+    --secondary: 162 75% 35%;
+    --secondary-foreground: 0 0% 95%;
 
-    /* Electric Green Accent */
-    --accent: 135 100% 55%;
-    --accent-foreground: 225 15% 8%;
+    /* Bright Teal Accent */
+    --accent: 162 85% 47%;
+    --accent-foreground: 0 0% 0%;
 
-    /* Vibrant Orange for CTAs */
+    /* Orange CTA for contrast */
     --cta: 25 100% 60%;
-    --cta-foreground: 225 15% 8%;
+    --cta-foreground: 0 0% 0%;
 
-    --muted: 225 15% 15%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 0 0% 13%;
+    --muted-foreground: 0 0% 65%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 225 15% 20%;
-    --input: 225 15% 15%;
-    --ring: 285 100% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 13%;
+    --ring: 162 85% 47%;
 
     --radius: 1rem;
 
-    /* Festival Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(285 100% 65%) 0%, hsl(195 100% 55%) 50%, hsl(135 100% 55%) 100%);
-    --gradient-glow: linear-gradient(90deg, hsl(285 100% 65% / 0.3) 0%, hsl(195 100% 55% / 0.3) 50%, hsl(135 100% 55% / 0.3) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(225 15% 12% / 0.8) 0%, hsl(225 15% 15% / 0.9) 100%);
+    /* Festival Gradients with new colors */
+    --gradient-hero: linear-gradient(135deg, hsl(162 85% 47%) 0%, hsl(162 75% 35%) 50%, hsl(0 0% 13%) 100%);
+    --gradient-glow: linear-gradient(90deg, hsl(162 85% 47% / 0.3) 0%, hsl(162 75% 35% / 0.3) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 13% / 0.8) 0%, hsl(0 0% 20% / 0.9) 100%);
 
     /* Festival Shadows & Effects */
-    --shadow-neon: 0 0 30px hsl(285 100% 65% / 0.4);
-    --shadow-cyan: 0 0 30px hsl(195 100% 55% / 0.4);
-    --shadow-green: 0 0 30px hsl(135 100% 55% / 0.4);
+    --shadow-neon: 0 0 30px hsl(162 85% 47% / 0.4);
+    --shadow-cyan: 0 0 30px hsl(162 75% 35% / 0.4);
+    --shadow-green: 0 0 30px hsl(162 85% 47% / 0.4);
     --shadow-orange: 0 0 30px hsl(25 100% 60% / 0.4);
 
     /* Animation Variables */
@@ -146,7 +146,7 @@
   }
 
   .neon-glow:hover {
-    box-shadow: var(--shadow-neon), 0 0 50px hsl(285 100% 65% / 0.6);
+    box-shadow: var(--shadow-neon), 0 0 50px hsl(162 85% 47% / 0.6);
     transform: translateY(-2px);
   }
 
@@ -187,7 +187,7 @@
 
   @keyframes pulse-neon {
     0% { box-shadow: var(--shadow-neon); }
-    100% { box-shadow: var(--shadow-neon), 0 0 60px hsl(285 100% 65% / 0.8); }
+    100% { box-shadow: var(--shadow-neon), 0 0 60px hsl(162 85% 47% / 0.8); }
   }
 
   @keyframes slide-in-up {

@@ -19,11 +19,11 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         festival: 
-          "bg-gradient-to-r from-primary via-secondary to-accent text-primary-foreground font-bold shadow-2xl hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:scale-110 transform transition-all duration-300 border-2 border-primary/20",
+          "bg-gradient-to-r from-primary via-secondary to-accent text-primary-foreground font-bold shadow-2xl hover:shadow-[0_0_30px_rgba(29,205,159,0.4)] hover:scale-110 transform transition-all duration-300 border-2 border-primary/20",
         cta: 
           "bg-cta text-cta-foreground font-bold shadow-2xl hover:bg-cta/90 hover:shadow-[0_0_30px_rgba(251,146,60,0.4)] hover:scale-105 transform transition-all duration-300",
         neon:
-          "bg-transparent border-2 border-primary text-primary font-bold hover:bg-primary hover:text-primary-foreground shadow-[0_0_20px_rgba(168,85,247,0.3)] hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-all duration-300",
+          "bg-transparent border-2 border-primary text-primary font-bold hover:bg-primary hover:text-primary-foreground shadow-[0_0_20px_rgba(29,205,159,0.3)] hover:shadow-[0_0_40px_rgba(29,205,159,0.6)] transition-all duration-300",
       },
       size: {
         default: "h-11 px-6 py-2",
